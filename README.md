@@ -1,4 +1,4 @@
-# hadoop-lite-docker
+# Hadoop Lite Docker
 
 A lightweight, easy-to-use Hadoop stack for local development and testing.
 This project uses Docker Compose to spin up a minimal, production-style big data cluster on your machine—including Hadoop, Hive, HBase, Kafka, Spark, Flink, Hue, Jupyter, and more.
