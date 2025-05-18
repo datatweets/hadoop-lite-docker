@@ -26,6 +26,7 @@ Perfect for students, engineers, and anyone learning distributed data systems.
 | namenode          | Hadoop HDFS NameNode                  | 50070        |
 | datanode1-3       | Hadoop HDFS DataNodes                 | 50075+       |
 | resourcemanager   | Hadoop YARN ResourceManager (job scheduling, cluster mgmt) | 8088 |
+| historyserver     | Hadoop History Server                 | 19888        |
 | postgres          | Metastore backend for Hive            | 5432         |
 | metastore         | Hive Metastore Service                | 9083         |
 | hive-server       | HiveServer2 (SQL engine)              | 10000,10002  |
