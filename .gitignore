@@ -1,0 +1,17 @@
+.DS_Store
+
+# Ignore HDFS data folders
+base/hdfs/
+
+# Ignore Postgres data if host path is used later
+base/postgresql/
+
+# Ignore MySQL data directory
+base/mysql/data/
+
+# Ignore Kafka log directories
+base/kafka/
+
+# Ignore all Zookeeper data
+base/zookeeper/
+
