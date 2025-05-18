@@ -25,6 +25,7 @@ Perfect for students, engineers, and anyone learning distributed data systems.
 | ----------------- | ------------------------------------- | ------------ |
 | namenode          | Hadoop HDFS NameNode                  | 50070        |
 | datanode1-3       | Hadoop HDFS DataNodes                 | 50075+       |
+| resourcemanager   | Hadoop YARN ResourceManager (job scheduling, cluster mgmt) | 8088 |
 | postgres          | Metastore backend for Hive            | 5432         |
 | metastore         | Hive Metastore Service                | 9083         |
 | hive-server       | HiveServer2 (SQL engine)              | 10000,10002  |
@@ -43,7 +44,6 @@ Perfect for students, engineers, and anyone learning distributed data systems.
 ## Prerequisites
 
 * [Docker Desktop](https://www.docker.com/products/docker-desktop) (or Docker Engine)
-* [Docker Compose](https://docs.docker.com/compose/) v2+
 
 **Recommended:** At least 8GB RAM (the full stack runs multiple containers)
 
@@ -139,4 +139,4 @@ MIT License (see [LICENSE](LICENSE) file)
 
 ## Credits
 
-Based on [datatweets/hadoop-docker](https://github.com/datatweets/hadoop-docker) with customizations and enhancements for a lighter, educational experience.
+Based on [Hadoop Docker](https://github.com/datatweets/hadoop-docker) and [Docker Big Data Tools](https://github.com/ZakariaMahmoud/Docker-BigData-Tools.git) with customizations and enhancements for a lighter, educational experience.

@@ -18,6 +18,25 @@ services:
     networks:
       net_pet:
         ipv4_address: 172.27.1.5
+        
+  resourcemanager:
+    image: bde2020/hadoop-resourcemanager
+    container_name: resourcemanager
+    hostname: resourcemanager
+    environment:
+      - CLUSTER_NAME=test
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:8020
+      - YARN_CONF_yarn_resourcemanager_hostname=resourcemanager
+      - YARN_CONF_yarn_nodemanager_aux_services=mapreduce_shuffle
+      - YARN_CONF_yarn_log___aggregation___enable=true
+      - YARN_CONF_yarn_log_server_url=http://historyserver:19888/jobhistory/logs
+    ports:
+      - "8088:8088"  # YARN ResourceManager Web UI
+    depends_on:
+      - namenode
+    networks:
+      net_pet:
+        ipv4_address: 172.27.1.27
 
   datanode1:
     image: fjardim/datanode
