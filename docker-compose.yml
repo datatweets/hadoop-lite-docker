@@ -5,6 +5,7 @@ services:
     hostname: namenode
     volumes:
       - ./base/hdfs/namenode:/hadoop/dfs/name
+      - ./base/mapreduce_examples:/opt/mapreduce_examples
     environment:
       - CLUSTER_NAME=test
     env_file:
@@ -343,7 +344,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 1g
+          memory: 4g
     networks:
       net_pet:
         ipv4_address: 172.27.1.24

@@ -15,3 +15,5 @@ base/kafka/
 # Ignore all Zookeeper data
 base/zookeeper/
 
+base/mapreduce_examples/classes/
+base/notebooks/.ipynb_checkpoints/
